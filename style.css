@@ -24,7 +24,7 @@ html {
 /* 2. Fuente y colores base */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8f9fa;
+    background-color: white;
     color: var(--normal-text-color);
     line-height: 1.5;
     font-size: 1.6rem;
@@ -183,7 +183,6 @@ header h1 {
 
 main {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -304,10 +303,112 @@ section {
     margin: 1rem;
 }
 
+.step-instructions {
+    display: flex;
+    flex-direction: column;
+    background-color: #21134E;
+    margin: 5rem 0;
+    color: #cbbcfb;
+    padding: 10rem;
+}
+
+.step-instructions h3{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.step-instructions
+h3, 
+h4 {
+    color: var(--color-secondary);
+}
+
+.step-instructions-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 2.5rem;
+}
+
+.step-instructions-step {
+    flex: 1;
+    background-color: #28185c;
+    padding: 3rem;
+    border-radius: 14px;
+}
+
+.step-instructions-step-number {
+    font-size: 10rem;      /* Más grande que el título */
+    font-weight: bold;
+    background: linear-gradient(to bottom, #fff 50%, transparent 60%, transparent 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: -4rem;
+    display: block;
+    text-align: left;
+}
+
+.step-instructions-step h4{
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    width: 95%;
+    margin: 5rem auto;
+    background-color: #21134E;
+    padding: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;     
+}
+
+.cta__content {
+    flex: 6;
+}
+
+.cta__actions {
+    flex: 4;
+}
+
+.cta__label {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cta__description {
+    margin-top: 1.5rem;
+    color: #cbbcfb;
+}
+
+.cta h3 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.btn-cta {
+    background-color: inherit;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.cta__actions .btn {
+    flex: 1;
+    margin: 0 1rem;
+}
+
 /* FOOTER */
 .footer {
     width: 80%;
-    margin: 1rem auto;
+    margin: 2.5rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;      /* Centra los hijos horizontalmente */
@@ -347,6 +448,8 @@ section {
 }
 
 .footer__column h4 {
+    font-size: 2.4rem;
+    color: black;
     margin-bottom: 1rem; /* Espacio entre el título y la lista */
     text-align: left;
     width: 100%;
@@ -392,53 +495,4 @@ section {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-}
-
-.cta {
-    width: 95%;
-    margin: 0 auto;
-    background-color: #21134E;
-    padding: 10rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;     
-}
-
-.cta__content {
-    flex: 6;
-}
-
-.cta__actions {
-    flex: 4;
-}
-
-.cta__label {
-    color: var(--color-primary);
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.cta__description {
-    margin-top: 1.5rem;
-    color: #cbbcfb;
-}
-
-.cta h3 {
-    color: white;
-    font-size: 4rem;
-    font-weight: 600;
-}
-
-.btn-cta {
-    background-color: inherit;
-    color: white;
-    border: 0.5px solid white;
-}
-
-.cta__actions .btn {
-    flex: 1;
-    margin: 0 1rem;
 }
